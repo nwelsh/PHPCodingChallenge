@@ -23,3 +23,16 @@ function sumOfTwo($a, $b, $v) {
 	}
 	return false;
 }
+
+<!-- Write a function that searches an array of names (unsorted) for the name "Bob" and returns the location in the array. If Bob is not in the array, return -1. -->
+function findBob($names) {
+	$it = 0;
+	foreach($names as $name){
+		// name is bob 
+		if(strcmp($name, "Bob") == 0) {
+			return $it;
+		}
+		$it++;
+	}
+	return -1;
+}
