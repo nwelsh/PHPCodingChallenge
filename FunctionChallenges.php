@@ -3,3 +3,10 @@
 function giveMeSomething($a) {
 	return "something " . $a;
 }
+
+
+<!-- Return the Remainder from Two Numbers  -->
+
+function remainder($x, $y) {
+	return $x % $y;
+}
