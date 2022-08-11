@@ -36,3 +36,9 @@ function findBob($names) {
 	}
 	return -1;
 }
+
+<!-- sorting : https://www.w3schools.com/php/php_arrays_sort.asp -->
+<!-- Create a function that takes a list of numbers and returns the second largest number. -->
+function secondLargest($a) {
+	return rsort($a);
+}
