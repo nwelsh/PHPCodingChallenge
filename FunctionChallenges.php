@@ -42,3 +42,17 @@ function findBob($names) {
 function secondLargest($a) {
 	return rsort($a);
 }
+
+<!-- fix the code to return all the upper case letters -->
+function countUppercase($arr) {
+ $sum = 0;
+ for ($x = 0; $x < $arr; $x++) {
+  $item = $arr[$x];
+	 for ($y =0; $y < strlen($item); $y++){
+		 if(ctype_upper($y)){
+		    $sum++;
+			}
+	 }
+ }
+ return $sum;
+}
