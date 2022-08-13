@@ -56,3 +56,13 @@ function countUppercase($arr) {
  }
  return $sum;
 }
+
+<!-- Given a number, return an array containing the two halves of the number. If the number is odd, make the rightmost number higher. -->
+function numberSplit($n) {
+	if($n % 2 == 0){
+		$arr = [$n/2, $n/2];
+	} else {
+		$arr = [floor($n/2), ceil($n/2)];
+	}
+	return $arr;
+}
