@@ -66,3 +66,16 @@ function numberSplit($n) {
 	}
 	return $arr;
 }
+
+<!-- Given an array of prices prices and a "supposed" total t, return true if there is a hidden fee added to the total (i.e. the total is greater than the sum of prices), otherwise return false. -->
+function hasHiddenFee($prices, $t) {
+	$counter = 0;
+ 	foreach ($prices as $x){
+		$counter += $x;
+	}
+	if($counter > $t){
+		return true;
+	} else{
+		return false;
+	}
+}
