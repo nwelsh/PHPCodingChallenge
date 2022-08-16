@@ -11,6 +11,11 @@ function remainder($x, $y) {
 	return $x % $y;
 }
 
+<!-- Create a function that finds the maximum range of a triangle's third edge, where the side lengths are all integers. -->
+function nextEdge($side1, $side2) {
+	return ($side1 + $side2) - 1;
+}
+
 <!-- Given two unique integer arrays $a and $b, and an integer target value $v, create a function to determine whether there is a pair of numbers that add up to the target value $v, where one number comes from one array $a and the other comes from the second array $b. -->
 function sumOfTwo($a, $b, $v) {
 	// a = arr1 b = arr2 v = target 
