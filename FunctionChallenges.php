@@ -84,3 +84,4 @@ function hasHiddenFee($prices, $t) {
 		return false;
 	}
 }
+
