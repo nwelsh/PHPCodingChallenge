@@ -132,3 +132,13 @@ function binary(decimal) {
         }
     return ans;
 }
+	
+					     
+<!-- 		Add up the Numbers from a Single Numbe			      -->
+function addUp(num) {
+	let add = 0;
+	for(let i = 1; i <= num; i++){
+		add += i;
+	}
+	return add;
+}				     
