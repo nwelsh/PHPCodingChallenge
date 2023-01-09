@@ -85,3 +85,20 @@ function hasHiddenFee($prices, $t) {
 	}
 }
 
+
+<!-- Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order. -->
+function minMax(arr) {
+	min = arr[0];
+	max = arr[0];
+	if(arr.length != 1){
+		for(var i = 1; i < arr.length; i++){
+			if(arr[i] < min){
+				min = arr[i];
+			}
+			if(arr[i] > max){
+				max = arr[i];
+			}
+		}
+	}
+	return [min, max];
+}
