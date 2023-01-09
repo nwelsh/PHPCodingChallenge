@@ -142,3 +142,8 @@ function addUp(num) {
 	}
 	return add;
 }				     
+
+<!-- calculate 2 and 3 pointers  -->
+function points(twoPointers, threePointers) {
+	return (2*twoPointers) + (3*threePointers);
+}
