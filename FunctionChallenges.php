@@ -102,3 +102,33 @@ function minMax(arr) {
 	}
 	return [min, max];
 }
+
+<!-- Convert a Number to Base-2 -->
+
+binary(100);
+function binary(decimal) {
+    let ans = "";
+    let bin = [1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1];
+    let sub = decimal;
+    let cur; let next;
+    for(var i = 0; i < bin.length; i++){
+       cur = bin[i];
+       next = bin[i+1];
+        if((sub > bin[i+1] && sub < bin[i])){
+          ans = ans.concat("1");
+          sub -= bin[i+1];
+        } else if (sub == bin[i+1]) {
+          ans = ans.concat("1");
+          sub -= bin[i+1];
+          i++;
+          }else{
+            if(ans.charAt(0) == "1"){
+                ans = ans.concat("0");
+            }
+    }
+    }
+        if(ans.length == 0){
+            ans = "0";
+        }
+    return ans;
+}
